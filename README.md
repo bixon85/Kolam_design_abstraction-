@@ -75,7 +75,7 @@ The centerline extraction pipeline is key to producing smooth vector graphics:
 
 1. Grid Isolation
 
-To prevent the skeletonizer from fusing dots to lines, dots must be removed. The system filters con based on geometric parameters: $$\text{Circularity} = \frac{4\pi \times \text{Area}}{\text{Perimete > 0.6 \quad \text{and} \quad \text(Solidity} = \frac{\text(Area}}{\text{Convex Hull Area}} > 0.8$$ Af locating dots, their coordinate centroids are saved, and the dots are masked (colored black) in the image.
+To prevent the skeletonizer from fusing dots to lines, dots must be removed. The system filters con based on geometric parameters
 
 2. Line Skeletonization
 
