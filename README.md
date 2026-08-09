@@ -1,6 +1,5 @@
 
-
-
+https://github.com/user-attachments/assets/5904c561-3bdf-4311-8bd2-1b161666ffca
 
 This project is a hybrid computer vision and generative AI platform designed to analyze, reconstruct, and teach traditional Indian Kolam and Rangoli floor art. It extracts drawing paths from photos and generates interactive, step-by-step drawing tutorials
 
