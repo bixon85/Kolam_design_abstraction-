@@ -1,3 +1,7 @@
+
+
+
+
 This project is a hybrid computer vision and generative AI platform designed to analyze, reconstruct, and teach traditional Indian Kolam and Rangoli floor art. It extracts drawing paths from photos and generates interactive, step-by-step drawing tutorials
 
 ⚙️ Backend ArchitectureThe backend consists of a Flask application integrating python-based computer vision (OpenCV, SciPy, scikit-image) and the LangChain orchestrator.1. backend/app.pyProvides HTTP endpoints for the React frontend:*/api/analyze (POST): Receives a multi-part form containing a Kolam image file, converts it into a Base64 string, and forwards it to the Multi-Agent orchestrator (run_orchestrator).*/api/chat (POST): Powers the Kolam Guru interactive chat. It constructs a system prompt that gives the model context about the current drawing step, the pattern's symmetry, and history. It makes direct requests to the Gemini API (gemini-2.5-flash or gemini-1.5-flash), with a fallback request to OpenAI's gpt-4o-mini.2. backend/kolam_orchestrator.pyDefines a structured, step-by-step execution chain using LangChain RunnableLambda units. It pipelines raw images into mathematical arrays and outputs structured JSON data.2. backend/kolam_orchestrator.py
